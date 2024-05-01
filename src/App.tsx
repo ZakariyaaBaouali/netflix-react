@@ -1,5 +1,9 @@
 const App = () => {
-  return <div>netflex app</div>;
+  return (
+    <div>
+      <button>click me</button>
+    </div>
+  );
 };
 
 export default App;
