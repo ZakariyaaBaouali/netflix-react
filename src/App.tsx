@@ -1,7 +1,9 @@
+import { Register } from "./components/Auth";
+
 const App = () => {
   return (
     <div>
-      <button>click me</button>
+      <Register />
     </div>
   );
 };
