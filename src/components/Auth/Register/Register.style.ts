@@ -47,8 +47,7 @@ export const Header = styled.nav`
   padding: 0 80px;
 
   & img {
-    width: 150px;
-    object-fit: cover;
+    width: 200px;
   }
 
   & button {
