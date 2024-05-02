@@ -11,6 +11,7 @@ import {
 } from "./Register.style";
 import { RegisterData } from "../../../mockData";
 import Box from "./Box";
+import Qs from "./Qs";
 
 const Register = () => {
   return (
@@ -67,6 +68,7 @@ const Register = () => {
         type="kids"
         isTextFirst={true}
       ></Box>
+      <Qs />
     </Container>
   );
 };
