@@ -1,9 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  border: 2px solid #fff;
+  flex-direction: column;
+  margin-bottom: 100vh;
+`;
+
+export const Banner = styled.div`
   height: 99vh;
   position: relative;
-  margin-bottom: 400px;
 
   &::before {
     content: "";
@@ -13,7 +18,8 @@ export const Container = styled.div`
     background-color: #8d8c8c;
     bottom: -8px;
     left: 0;
-    filter: brightness(0.5);
+    filter: brightness(0.4);
+    z-index: 99;
   }
 `;
 
