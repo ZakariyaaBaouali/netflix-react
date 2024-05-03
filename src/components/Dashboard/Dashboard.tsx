@@ -1,9 +1,18 @@
-import { Container, Content, Header, Main, Sidebar } from "./Dashboard.style";
+import { MenuItem, SubMenu } from "react-pro-sidebar";
+import {
+  Container,
+  Content,
+  Header,
+  List,
+  Main,
+  Side,
+  Wrapper,
+} from "./Dashboard.style";
 
 const Dashboard = () => {
   return (
     <Container>
-      <Sidebar>
+      <Side>
         <Header>
           <img
             src="https://images.pexels.com/photos/1559486/pexels-photo-1559486.jpeg"
@@ -12,17 +21,26 @@ const Dashboard = () => {
           <h1>Zakaria baouali</h1>
         </Header>
         <Content>
-          <div className="box">1</div>
-          <div className="box">2</div>
-          <div className="box">3</div>
-          <div className="box">4</div>
-          <div className="box">5</div>
-          <div className="box">6</div>
-          <div className="box">7</div>
-          <div className="box">8</div>
-          <div className="box">9</div>
+          <Wrapper>
+            <List>
+              <SubMenu label="Assets">
+                <MenuItem
+                  onClick={(e) => {
+                    e.preventDefault();
+                    console.log("images");
+                  }}
+                >
+                  Images
+                </MenuItem>
+                <MenuItem> Videos </MenuItem>
+              </SubMenu>
+              <MenuItem> Accounts </MenuItem>
+              <MenuItem> Movies </MenuItem>
+              <MenuItem> Tv Shows </MenuItem>
+            </List>
+          </Wrapper>
         </Content>
-      </Sidebar>
+      </Side>
       <Main></Main>
     </Container>
   );
