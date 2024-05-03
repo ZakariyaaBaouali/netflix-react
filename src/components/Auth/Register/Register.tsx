@@ -12,8 +12,15 @@ import {
 import { RegisterData } from "../../../mockData";
 import Box from "./Box";
 import Qs from "./Qs";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
+  const navigate = useNavigate();
+
+  const handleRegisterClick = () => {
+    navigate("/signup/registration");
+  };
+
   return (
     <Container>
       <Banner>
@@ -30,7 +37,7 @@ const Register = () => {
             <p>{RegisterData.content.description}</p>
             <Form>
               <input type="email" placeholder="Email address" required />
-              <button>
+              <button onClick={handleRegisterClick}>
                 get started <FaArrowRight />
               </button>
             </Form>
