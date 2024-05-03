@@ -570,3 +570,39 @@ export const RegisterData = {
     imagePath: "auth/kids.png",
   },
 };
+
+interface Plan {
+  title: string;
+  subTitle: string;
+  price: number;
+  qaulity: string;
+  resoluation: string;
+  isPopular: boolean;
+}
+
+export const PlansData: Plan[] = [
+  {
+    title: "premium",
+    subTitle: "4K + HDR",
+    price: 30,
+    qaulity: "best",
+    resoluation: "4K (Ultra HD) + HDR",
+    isPopular: true,
+  },
+  {
+    title: "standard",
+    subTitle: "1080p",
+    price: 21,
+    qaulity: "great",
+    resoluation: "1080p (Full HD)",
+    isPopular: false,
+  },
+  {
+    title: "basic",
+    subTitle: "720p",
+    price: 15,
+    qaulity: "good",
+    resoluation: "720p (HD)",
+    isPopular: false,
+  },
+];
